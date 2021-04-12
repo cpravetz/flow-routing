@@ -7,10 +7,10 @@
 'use strict';
 
 Package.describe({
-  name: 'useraccounts:flow-routing',
+  name: 'seakaytee:ua-flow-routing',
   summary: 'UserAccounts package providing routes configuration capability via kadira:flow-router.',
-  version: '1.14.2',
-  git: 'https://github.com/meteor-useraccounts/flow-routing.git',
+  version: '1.15.0',
+  git: 'https://github.com/cpravetz/flow-routing.git',
 });
 
 Package.onUse(function(api) {
@@ -20,13 +20,13 @@ Package.onUse(function(api) {
     'check',
     'kadira:flow-router',
     'underscore',
-    'useraccounts:core',
+    'seakaytee:ua-core',
     'modules'
   ], ['client', 'server']);
 
   api.imply([
     'kadira:flow-router@2.10.1',
-    'useraccounts:core@1.14.2',
+    'seakaytee:ua-core@1.15.0',
   ], ['client', 'server']);
 
   api.use([
